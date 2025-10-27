@@ -4,6 +4,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
 
     .cont {
         width: 70%;
@@ -43,7 +47,7 @@ body {
                 box-shadow: 0 4px 15px rgb(0 0 0 / 86%);
 
                 @media screen and (max-width: 767px) {
-                    width: 138%;
+                    width: 135%;
                     height: 60dvh;
                     padding-top: 0px;
                     padding-bottom: 35px;
@@ -81,6 +85,7 @@ body {
                     }
 
                     .but {
+
                         @media screen and (max-width: 767px) {
                             width: 75%;
                             display: flex;
