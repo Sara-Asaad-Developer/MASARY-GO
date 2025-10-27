@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>Masary Go</title>
+</head>
+
+<body>
+
+    <div class=" cont container">
+        <div>
+            <h1>MASARY GO</h1>
+            <div class="sara">
+                <h1>Your current balance : <span id="balSpan">......</span></h1>
+                <button class="btn btn-dark" onclick="showBalance()">SHOW BALANCE</button>
+                <div class="col-12 d-flex gap-3">
+                    <input placeholder="ENTER THE AMOUNT" class="form-control border shadow">
+                    <div class="but p-0 m-0">
+                        <button onclick="deposit()" class="btn  btn-dark ">Deposit</button>
+                        <button onclick="withdraw()" class="btn btn-dark ">Withdraw</button>
+                        <button onclick=" showStatement()" class="btn btn-dark "> Show Statement</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tt">
+        <table class="table table-dark p-5">
+            <thead>
+                <tr>
+                    <th>Transaction Number</th>
+                    <th>Before Balance</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>After Balance</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
