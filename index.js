@@ -47,7 +47,6 @@ let withdraw = () => {
         afterBalance: balance - amount
     };
     statement.push(newStatement);
-    balance = balance - amount;
     if (amount <= balance) {
         balance = balance - amount;
         showBalance();
