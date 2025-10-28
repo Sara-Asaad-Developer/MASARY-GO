@@ -21,7 +21,7 @@ body {
 
         div {
             @media screen and (max-width: 767px) {
-                width: 127%;
+                width: 100%;
                 padding-bottom: 20px;
             }
 
@@ -34,7 +34,7 @@ body {
             }
 
             .sara {
-                height: 50dvh;
+                height: 60dvh;
                 background-color: #59427a;
                 color: #d5c7e8;
                 align-content: center;
@@ -47,7 +47,6 @@ body {
                 @media screen and (max-width: 767px) {
                     width: 100%;
                     height: 60dvh;
-                    padding-top: 0px;
                     padding-bottom: 35px;
                     padding-right: 10px;
                     padding-left: 10px;
@@ -56,6 +55,7 @@ body {
                 }
 
                 h1 {
+
                     @media screen and (max-width: 767px) {
                         padding: 0px;
                         margin-top: 0px;
@@ -63,19 +63,36 @@ body {
                     }
                 }
 
-                div {
-                    padding-top: 2rem;
+                .bb {
+                    margin-bottom: 1rem;
 
                     @media screen and (max-width: 767px) {
+                        width: 100px;
+                        height: 35px;
+                        font-size: 10px;
+
+                    }
+                }
+
+                div {
+                    padding-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 0px;
+
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
                         display: flex;
                         flex-direction: column;
-                        padding-top: 10px;
+
 
                     }
 
                     input {
+                        height: 8dvh;
+
                         @media screen and (max-width: 767px) {
-                            width: 75%;
+                            width: 100%;
                             height: 10dvh;
 
 
@@ -83,12 +100,17 @@ body {
                     }
 
                     .but {
+                        width: 70%;
+                        display: flex;
+                        gap: 1rem;
+                        padding-left: 20px;
 
                         @media screen and (max-width: 767px) {
-                            width: 75%;
+                            width: 100%;
                             display: flex;
-                            gap: 1rem;
-                            order: 2;
+                            flex-direction: column;
+                            gap: 5px;
+                            padding-left: 0px;
 
                         }
                     }
@@ -99,14 +121,14 @@ body {
     }
 
     .tt {
-        padding-top: 4rem;
+        padding-top: 6rem;
         padding-left: 7rem;
         padding-right: 7rem;
 
         @media screen and (max-width: 767px) {
             width: 100%;
-            padding-left: 20px;
-            padding-top: 50px;
+            padding: 10px;
+
             border-radius: 4px;
             display: flex;
         }
